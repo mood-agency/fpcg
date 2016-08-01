@@ -1,7 +1,7 @@
-# fpcg
-Facebook Pixel Code Generator
+# fpcg(Facebook Pixel Code Generator)
+
 
 A better way to create the new Facebook Pixel
 
 ## Live
-http://mood.com.ve/fcpg
+http://mood.com.ve/labs/fcpg
