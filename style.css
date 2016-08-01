@@ -1,0 +1,20 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#facebook_code {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+textarea.materialize-textarea {
+    font-family: 'Droid Sans Mono';
+    font-size: 12px !important;
+}
+
+#editor {
+
+    width: 100%;
+    height: 300px;
+}

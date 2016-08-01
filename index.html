@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Facebook Pixel Code Generator</title>
+    <meta name="description" content="Put the facebook id, select the options and presto!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="//cdn.jsdelivr.net/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js" type="text/javascript"
+            charset="utf-8"></script>
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="tooltipped"></div>
+<div class="container">
+    <div class="row">
+
+        <h1>Facebook Pixel Code Generator</h1>
+        <label for="facebook_id">Facebook Id</label><input placeholder="Put your Facebook Id Here!" id="facebook_id" type="text">
+
+    </div>
+    <div class="row">
+        <div class="col l3">
+
+            <div id="options">
+                <p>
+                    <input id="PageView" type="checkbox" id="PageView" name="PageView" value="PageView"
+                           data-params='["track","PageView"]'>
+                    <label for="PageView">PageView</label>
+                </p>
+
+                <p><input id="ViewContent" type="checkbox" name="ViewContent" value="ViewContent"
+                          data-params='["track","ViewContent"]'>
+                    <label for="ViewContent">ViewContent</label></p>
+
+                <p><input id="Search" type="checkbox" name="Search" value="Search" data-params='["track","Search"]'>
+                    <label for="Search">Search</label></p>
+
+
+                <p><input id="AddToCart" type="checkbox" name="AddToCart" value="AddToCart"
+                          data-params='["track","AddToCart"]'>
+                    <label for="AddToCart">AddToCart</label></p>
+
+                <p><input id="AddToWishlist" type="checkbox" name="AddToWishlist" value="AddToWishlist"
+                          data-params='["track","AddToWishlist"]'>
+                    <label for="AddToWishlist">AddToWishlist</label></p>
+
+                <p><input id="InitiateCheckout" type="checkbox" name="InitiateCheckout" value="InitiateCheckout"
+                          data-params='["track","InitiateCheckout"]'>
+                    <label for="InitiateCheckout">InitiateCheckout</label></p>
+
+                <p><input id="AddPaymentInfo" type="checkbox" name="AddPaymentInfo" value="AddPaymentInfo"
+                          data-params='["track","AddPaymentInfo"]'>
+                    <label for="AddPaymentInfo">AddPaymentInfo</label></p>
+
+
+                <p><input id="Purchase" type="checkbox" name="Purchase" value="Purchase"
+                          data-params='["track","Purchase"]'>
+                    <label for="Purchase">Purchase</label></p>
+
+                <p><input id="Lead" type="checkbox" name="Lead" value="Lead" data-params='["track","Lead"]'>
+                    <label for="Lead">Lead</label></p>
+
+                <p><input id="CompleteRegistration" type="checkbox" name="CompleteRegistration"
+                          value="CompleteRegistration"
+                          data-params='["track","CompleteRegistration"]'>
+                    <label for="CompleteRegistration">CompleteRegistration</label></p>
+
+
+            </div>
+        </div>
+        <div class="col l9 m9 s12">
+            <div id="editor"></div>
+            <a class="waves-effect waves-light btn" id="copy-button" data-clipboard-text=""
+               title="Click to copy me.">Copy to Clipboard</a>
+        </div>
+
+    </div>
+    <h2>Comments</h2>
+   <!-- -->
+    <div class="jwDisqusForm">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            //<![CDATA[
+            var disqus_shortname = 'moodagency';
+            var disqus_url = 'http://mood.com.ve/labs/fpcg/';
+            var disqus_identifier = '5feda0d223_id_labs1';
+            var disqus_developer = '0';
+            var disqus_config = function(){
+                this.language = 'es_MX';
+            };
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            //]]>
+        </script>
+        <noscript>
+            <a href="http://moodagency.disqus.com/?url=ref">View the discussion thread.</a>
+        </noscript>
+        <div id="jwDisqusFormFooter">
+            <a target="_blank" href="http://disqus.com" class="dsq-brlink">
+                blog comments powered by <span class="logo-disqus">DISQUS</span>
+            </a>
+            <a id="jwDisqusBackToTop" href="#startOfPage">
+                back to top		</a>
+            <div class="clr"></div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dfa0b0468f64c1"></script>
+</body>
+</html>
